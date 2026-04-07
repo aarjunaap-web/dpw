@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 2_3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Form Pendaftaran</h1>
+    </div>
+
+    <div id="main">
+
+        <div id="link">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <form method="post" action="proses.php">
+
+                <p>
+                    Nama: <br>
+                    <input type="text" name="nama">
+                </p>
+
+                <p>
+                    Tempat Lahir: <br>
+                    <input type="text" name="tempat">
+                </p>
+
+                <p>
+                    Tanggal Lahir: <br>
+                    <input type="date" name="tanggal">
+                </p>
+
+                <p>
+                    Jenis Kelamin: <br>
+                    <input type="radio" name="jk" value="L"> Laki-laki
+                    <input type="radio" name="jk" value="P"> Perempuan
+                </p>
+
+                <p>
+                    Agama: <br>
+                    <select name="agama">
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </p>
+
+                <p>
+                    Jurusan: <br>
+                    <select name="jurusan">
+                        <option>Teknologi Informasi</option>
+                        <option>Perkeretaapian</option>
+                        <option>Akuntansi</option>
+                    </select>
+                </p>
+
+                <p>
+                    Alamat: <br>
+                    <textarea name="alamat"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="DAFTAR">
+                    <input type="reset" value="BATAL">
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p><i>@juna_253307052_2026</i></p>
+    </div>
+
+</body>
+</html>
