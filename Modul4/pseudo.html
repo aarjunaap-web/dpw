@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Class</title>
+
+    <style>
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pseudo Class :hover</h2>
+
+    <div>
+        Arahkan mouse ke sini untuk melihat paragraf
+        <p>Saya adalah elemen paragraf</p>
+    </div>
+
+    <br><br>
+
+    <a href="#">Arahkan mouse ke link ini</a>
+
+    <p>
+        Kesimpulan: Pseudo-class digunakan untuk memberikan efek pada kondisi tertentu, 
+        seperti saat mouse diarahkan (hover).
+    </p>
+
+</body>
+</html>

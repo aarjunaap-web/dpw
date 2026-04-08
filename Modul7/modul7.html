@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modul 7 JavaScript</title>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+body { font-family: Arial; }
+.section { margin: 20px 0; }
+</style>
+
+</head>
+
+<body>
+
+<h1>MODUL 7 JAVASCRIPT</h1>
+<p>Nama: Arjuna AP | NIM: 253307052</p>
+
+<!-- 1. ALERT -->
+<div class="section">
+<h3>1. Alert</h3>
+<button onclick="alert('Hello!')">Klik Alert</button>
+</div>
+
+<!-- 2. INPUT -->
+<div class="section">
+<h3>2. Input Data</h3>
+<button onclick="inputData()">Input Nama</button>
+<p id="hasil"></p>
+</div>
+
+<!-- 3. CONFIRM -->
+<div class="section">
+<h3>3. Confirm Box</h3>
+<button onclick="confirmBox()">Klik</button>
+<p id="demo"></p>
+</div>
+
+<!-- 4. VALIDASI -->
+<div class="section">
+<h3>4. Validasi</h3>
+<input type="text" id="nama">
+<button onclick="cekNama()">Kirim</button>
+</div>
+
+<!-- 5. RADIO -->
+<div class="section">
+<h3>5. Radio</h3>
+<form name="formTes">
+<input type="radio" name="radioMusik" value="Jazz">Jazz
+<input type="radio" name="radioMusik" value="Pop">Pop
+<input type="radio" name="radioMusik" value="Dangdut">Dangdut
+<br>
+<input type="text" name="hasilRadio">
+<button type="button" onclick="info()">Pilih</button>
+</form>
+</div>
+
+<!-- 6. PASSWORD -->
+<div class="section">
+<h3>6. Password</h3>
+<input type="password" id="p1" placeholder="Password">
+<input type="password" id="p2" placeholder="Ulangi">
+<button onclick="cekPassword()">Cek</button>
+</div>
+
+<!-- 7. JAM -->
+<div class="section">
+<h3>7. Jam Realtime</h3>
+<p id="jam"></p>
+</div>
+
+<!-- 8. TEORI -->
+<div class="section">
+<h3>8. AJAX & jQuery</h3>
+<p>
+AJAX adalah teknik untuk mengambil data tanpa reload halaman.  
+jQuery adalah library JavaScript untuk mempermudah manipulasi HTML.
+</p>
+</div>
+
+<!-- 9. MENU JQUERY -->
+<div class="section">
+<h3>9. Menu jQuery</h3>
+<button id="toggle">Tampilkan Menu</button>
+<ul id="menu" style="display:none;">
+<li>Home</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</div>
+
+<!-- 10. DIALOG -->
+<div class="section">
+<h3>10. Dialog</h3>
+<button onclick="alert('Ini dialog sederhana')">Buka Dialog</button>
+</div>
+
+<!-- 11. PROGRESS -->
+<div class="section">
+<h3>11. Progress</h3>
+<button onclick="startProgress()">Download</button>
+<progress id="prog" value="0" max="100"></progress>
+</div>
+
+<script>
+
+// INPUT
+function inputData(){
+let nama = prompt("Masukkan nama:");
+document.getElementById("hasil").innerHTML = "Halo " + nama;
+}
+
+// CONFIRM
+function confirmBox(){
+let txt;
+if(confirm("Yakin?")){
+txt="OK ditekan";
+}else{
+txt="Cancel ditekan";
+}
+document.getElementById("demo").innerHTML=txt;
+}
+
+// VALIDASI
+function cekNama(){
+let nama=document.getElementById("nama").value;
+if(nama==""){
+alert("Nama kosong!");
+}else{
+alert("Halo "+nama);
+}
+}
+
+// RADIO
+function info(){
+let radio=document.forms["formTes"]["radioMusik"];
+for(let i=0;i<radio.length;i++){
+if(radio[i].checked){
+document.forms["formTes"]["hasilRadio"].value=radio[i].value;
+}
+}
+}
+
+// PASSWORD
+function cekPassword(){
+let p1=document.getElementById("p1").value;
+let p2=document.getElementById("p2").value;
+
+if(p1!=p2){
+alert("Password tidak sama");
+}else{
+alert("Password cocok");
+}
+}
+
+// JAM
+setInterval(function(){
+let t=new Date();
+document.getElementById("jam").innerHTML=t.toLocaleTimeString();
+},1000);
+
+// JQUERY MENU
+$("#toggle").click(function(){
+$("#menu").toggle();
+});
+
+// PROGRESS
+function startProgress(){
+let i=0;
+let bar=document.getElementById("prog");
+
+let interval=setInterval(function(){
+i+=10;
+bar.value=i;
+if(i>=100) clearInterval(interval);
+},500);
+}
+
+</script>
+
+</body>
+</html>

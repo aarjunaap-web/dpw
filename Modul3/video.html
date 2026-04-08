@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Arjuna AP">
+    <meta name="nim" content="253307052">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        video {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Judul Website</h2>
+</header>
+
+<section>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gambar.html">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Video HTML5</h1>
+
+        <!-- VIDEO LOCAL -->
+        <video width="420" height="315" controls muted>
+            <source src="gambar/video/Skateboard.mp4" type="video/mp4">
+            Browser tidak mendukung video.
+        </video>
+
+        <br><br>
+
+        <!-- VIDEO YOUTUBE -->
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/8mVgt6PhPZ8?si=ySh1AcxrlDyFSEVn" allowfullscreen>
+        </iframe>
+
+        <p>
+            Kesimpulan: Tag video digunakan untuk menampilkan video di website.
+            Atribut controls menampilkan tombol kontrol.
+            Video juga bisa diambil dari YouTube menggunakan iframe.
+        </p>
+
+        <p><b>Nama:</b> Arjuna AP</p>
+        <p><b>NIM:</b> 253307052</p>
+    </article>
+
+</section>
+
+<footer>
+    <p>@juna_253307052_2026</p>
+</footer>
+
+</body>
+</html>

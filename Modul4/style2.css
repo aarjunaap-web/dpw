@@ -1,0 +1,13 @@
+body {
+    background-color: lightgray;
+}
+
+#judul {
+    color: blue;
+    text-align: center;
+}
+
+#paragraf {
+    color: red;
+    font-size: 18px;
+}

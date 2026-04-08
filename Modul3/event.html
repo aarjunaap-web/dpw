@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Arjuna AP">
+    <meta name="nim" content="253307052">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            width: 30%;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <script>
+        function klikGambar(nama) {
+            alert("Kamu klik gambar: " + nama);
+        }
+
+        function masukGambar() {
+            console.log("Mouse masuk ke gambar");
+        }
+
+        function keluarGambar() {
+            console.log("Mouse keluar dari gambar");
+        }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <h2>Judul Website</h2>
+</header>
+
+<section>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gambar.html">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Event pada Gambar</h1>
+
+        <!-- GAMBAR + EVENT -->
+        <img src="../Modul1/images/gambar1.jpg"
+             onclick="klikGambar('Gambar 1')"
+             onmouseover="masukGambar()"
+             onmouseout="keluarGambar()">
+
+        <img src="../Modul1/images/gambar2.jpg"
+             onclick="klikGambar('Gambar 2')"
+             onmouseover="masukGambar()"
+             onmouseout="keluarGambar()">
+
+        <img src="../Modul1/images/gambar3.jpg"
+             onclick="klikGambar('Gambar 3')"
+             onmouseover="masukGambar()"
+             onmouseout="keluarGambar()">
+
+        <p>
+            Kesimpulan: Event pada HTML digunakan untuk memberikan interaksi
+            seperti klik (onclick), hover (onmouseover), dan keluar (onmouseout).
+            Hal ini membuat website menjadi lebih interaktif.
+        </p>
+
+        <p><b>Nama:</b> Arjuna AP</p>
+        <p><b>NIM:</b> 253307052</p>
+    </article>
+
+</section>
+
+<footer>
+    <p>@juna_253307052_2026</p>
+</footer>
+
+</body>
+</html>

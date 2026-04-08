@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri Flexbox</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .galeri {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            margin: 10px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .desc {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .item:hover {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Galeri Gambar</h2>
+
+    <div class="galeri">
+
+        <div class="item">
+            <img src="gambar/img1.jpg" alt="gambar1">
+            <div class="desc">Gambar 1</div>
+        </div>
+
+        <div class="item">
+            <img src="gambar/img2.jpg" alt="gambar2">
+            <div class="desc">Gambar 2</div>
+        </div>
+
+        <div class="item">
+            <img src="gambar/img3.jpg" alt="gambar3">
+            <div class="desc">Gambar 3</div>
+        </div>
+
+        <div class="item">
+            <img src="gambar/img4.jpg" alt="gambar4">
+            <div class="desc">Gambar 4</div>
+        </div>
+
+        <div class="item">
+            <img src="gambar/img5.jpg" alt="gambar5">
+            <div class="desc">Gambar 5</div>
+        </div>
+
+    </div>
+
+    <p style="text-align:center;">
+        Kesimpulan: Flexbox memudahkan pembuatan layout galeri yang rapi, fleksibel, dan responsif.
+    </p>
+
+</body>
+</html>

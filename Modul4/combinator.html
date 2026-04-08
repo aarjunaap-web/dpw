@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinator Selector</title>
+    <style>
+        div p {
+            color: red;
+        }
+
+        div > p {
+            background-color: yellow;
+        }
+
+        div + p {
+            background-color: darkgray;
+        }
+
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>Paragraf dalam div (1)</p>
+        <p>Paragraf dalam div (2)</p>
+    </div>
+
+    <p>Paragraf setelah div (1)</p>
+    <p>Paragraf setelah div (2)</p>
+
+</body>
+</html>

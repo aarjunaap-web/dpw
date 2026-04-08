@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flexbox</title>
+
+    <style>
+        .wadah-flex {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .wadah-flex div {
+            background-color: lightblue;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /* SKENARIO 3 */
+        .arah {
+            flex-direction: row;
+        }
+
+        /* SKENARIO 4 */
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        /* SKENARIO 5 */
+        .flow {
+            flex-flow: row wrap;
+        }
+
+        /* SKENARIO 6 */
+        .justify {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Flexbox</h2>
+
+    <!-- SKENARIO 1 -->
+    <div class="wadah-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>Kesimpulan skenario 1: Flexbox membuat elemen sejajar secara horizontal.</p>
+
+    <!-- SKENARIO 2 -->
+    <div class="wadah-flex">
+        <div style="background:red;">1</div>
+        <div style="background:green;">2</div>
+        <div style="background:blue;">3</div>
+    </div>
+    <p>Kesimpulan skenario 2: Setiap elemen bisa diberi style berbeda.</p>
+
+    <!-- SKENARIO 3 -->
+    <div class="wadah-flex arah">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>Kesimpulan skenario 3: flex-direction mengatur arah (row/column).</p>
+
+    <!-- SKENARIO 4 -->
+    <div class="wadah-flex wrap">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+        <div>7</div><div>8</div><div>9</div>
+        <div>10</div><div>11</div><div>12</div>
+    </div>
+    <p>Kesimpulan skenario 4: flex-wrap membuat elemen turun ke bawah jika penuh.</p>
+
+    <!-- SKENARIO 5 -->
+    <div class="wadah-flex flow">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <p>Kesimpulan skenario 5: flex-flow menggabungkan direction dan wrap.</p>
+
+    <!-- SKENARIO 6 -->
+    <div class="wadah-flex justify">
+        <div>1</div><div>2</div><div>3</div>
+    </div>
+    <p>Kesimpulan skenario 6: justify-content mengatur jarak antar elemen.</p>
+
+</body>
+</html>

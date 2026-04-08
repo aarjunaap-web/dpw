@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Element</title>
+
+    <style>
+        p::first-line {
+            background-color: yellow;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p::before {
+            content: "👉 ";
+        }
+
+        p::after {
+            content: " ✔";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pseudo Element</h2>
+
+    <p>
+        Ini adalah paragraf pertama. Pseudo-element digunakan untuk memodifikasi 
+        bagian tertentu dari elemen seperti huruf pertama atau baris pertama.
+    </p>
+
+    <p>
+        Ini adalah paragraf kedua. Dengan pseudo-element kita bisa membuat tampilan 
+        lebih menarik tanpa mengubah HTML.
+    </p>
+
+    <p>
+        Kesimpulan: Pseudo-element digunakan untuk mengatur bagian tertentu dari elemen, 
+        seperti huruf pertama, baris pertama, atau menambahkan konten sebelum dan sesudah elemen.
+    </p>
+
+</body>
+</html>
