@@ -1,5 +1,10 @@
 # Desain & Pemrograman Web (DPW)
 
+**Nama:** Arjuna Anggara Putra
+**NIM:** 253307052
+**Kelas:** 2B
+**Program Studi:** Teknologi Informasi
+
 ## 📌 Deskripsi Mata Kuliah Desain & Pemrograman Web
 
 Repository ini berisi kumpulan modul praktikum mata kuliah Desain dan Pemrograman Web (DPW).
